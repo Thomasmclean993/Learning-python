@@ -1,0 +1,12 @@
+from flask import Flask, render_template, redirect, url_for, request
+
+app = Flask(_name_)
+@app.route('/login', methods=['Get', 'POST'])# First WE need to create a route.
+def login ():
+    error = None
+    if request.method == 'Post':
+        if request.form['Username'] != 'admin' or request.form['password']
+            error = 'Wrong Username or password, Please try to login again.'
+        else:
+            returned redirect(url_for('home'))
+    return render render_template('Lo
